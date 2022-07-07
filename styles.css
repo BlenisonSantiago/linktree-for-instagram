@@ -35,10 +35,18 @@ body.dark-pink {
    --primary-color-dark: #d6336c;
 }
 
+body.gradient {
+   --bg-color: linear-gradient(#060042,#20a39e);   
+   --text-color: #ffffff;
+   --primary-color: #20a39e;
+   --primary-color-dark: #1b807c;   
+}
+
 body {
-   background: var(--bg-color);
+   background: var(--bg-color); 
    color: var(--text-color);
    font-family: 'Roboto', sans-serif;
+   display: flex;
 }
 
 .container {
@@ -72,12 +80,19 @@ h1 {
    font-size: 18px;
 }
 
+.icon {
+   width: 25px;
+   text-align: left;
+   display: flex;
+}
+
 ul {
    list-style: none;
    margin: 48px 0;
 }
 
 ul li a {
+   text-indent: 1em;
    height: 53px;
    display: flex;
    align-items: center;
